@@ -1,0 +1,15 @@
+{
+  "functions": {
+    "api/*.js": {
+      "runtime": "nodejs20.x",
+      "maxDuration": 60,
+      "memory": 1024
+    }
+  },
+  "routes": [
+    { "src": "/", "dest": "/public/index.html" },
+    { "src": "/pair", "dest": "/api/pair.js" },
+    { "src": "/download", "dest": "/api/download.js" },
+    { "src": "/health", "dest": "/api/health.js" }
+  ]
+}
