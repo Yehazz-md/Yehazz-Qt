@@ -1,20 +1,27 @@
 {
-  "name": "vercel-whatsapp-pair-code",
+  "name": "yehazz-md-bot",
   "version": "1.0.0",
-  "private": true,
+  "description": "Yehazz Md Bot - WhatsApp Pair Code Generator",
+  "main": "index.js",
   "type": "module",
   "engines": {
-    "node": ">=20"
+    "node": ">=20.0.0"
   },
   "scripts": {
-    "dev": "vercel dev",
-    "start": "node api/health.js"
+    "start": "node index.js",
+    "build": "echo 'No build step required'"
   },
+  "author": "Mr Yehazz Ofc",
+  "license": "ISC",
   "dependencies": {
     "@whiskeysockets/baileys": "^6.7.18",
-    "archiver": "^7.0.1",
     "awesome-phonenumber": "7.2.0",
+    "body-parser": "^1.20.3",
+    "express": "^4.21.2",
+    "path": "^0.12.7",
+    "phone": "3.1.55",
     "pino": "9.5.0",
-    "qrcode": "^1.5.4"
+    "qrcode": "^1.5.4",
+    "qrcode-terminal": "^0.12.0"
   }
 }
